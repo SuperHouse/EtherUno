@@ -6,7 +6,7 @@ UNO reference design, but with improvements and updates for ease of use,
 cost, and getting started. It also includes on-board Ethernet with PoE
 (Power-over-Ethernet) support and uses a USB-C socket.
 
-![EtherUNO](Images/ETHERUNO-v4_0-oblique-render.jpg)
+![EtherUNO](Images/ETHERUNO-v1_0-oblique-render.jpg)
 
 Features:
 
@@ -16,11 +16,11 @@ Features:
  * Overlay guide where you need it (both top and bottom)
  * D13 pin works for everything
  * RX pin biased
- * Mounting holes, power and X3 pads
+ * Mounting holes
 
 More information is available at:
 
-  https://www.superhouse.tv/etheruno
+  https://www.superhouse.tv/eu
 
 
 Hardware
@@ -33,6 +33,9 @@ non-commercial use.
 Credits
 -------
  * Jonathan Oxer <jon@oxer.com.au>
+
+ The EtherUNO is based on the EtherTen, which was designed by Jonathan
+ Oxer and Marc Alexander.
 
 
 License
