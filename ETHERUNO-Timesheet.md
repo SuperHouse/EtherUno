@@ -1,6 +1,5 @@
 EtherUno Timesheet
 ==================
-Rate: $70/hr
 
 9-Sep-2020: 5 hours
  * Investigate W5500 Ethernet failure.
