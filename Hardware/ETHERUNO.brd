@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -968,6 +968,7 @@ Open Hardware License
 tapr.org/OHL</text>
 <text x="30.305" y="4.953" size="1.7272" layer="22" font="vector" ratio="17" rot="SMR0">v1.1</text>
 <text x="50" y="44.5" size="0.8" layer="21" font="vector" ratio="17" distance="30">superhouse.tv</text>
+<text x="60.254" y="27.608" size="1.3" layer="22" font="vector" ratio="17" rot="SMR0">D4</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -3412,6 +3413,10 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="38.095" y="34.46" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="38.095" y="38.27" size="1.27" layer="27" ratio="10"/>
 </element>
+<element name="U$2" library="SuperHouse-Jumpers" library_urn="urn:adsk.eagle:library:12190622" package="SJC" package3d_urn="urn:adsk.eagle:package:7066342/1" value="SJC-NORMAL" x="56.3" y="28.3" smashed="yes" rot="MR180">
+<attribute name="NAME" x="54.649" y="27.157" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="VALUE" x="56.7001" y="28.3" size="0.02" layer="28" rot="MR180"/>
+</element>
 </elements>
 <signals>
 <signal name="A0">
@@ -3476,11 +3481,9 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="59.944" y1="12.446" x2="62.611" y2="15.113" width="0.254" layer="16"/>
 <wire x1="62.611" y1="15.113" x2="62.611" y2="21.336" width="0.254" layer="16"/>
 <wire x1="62.611" y1="21.336" x2="60.833" y2="23.114" width="0.254" layer="16"/>
-<wire x1="60.833" y1="23.114" x2="60.833" y2="29.337" width="0.254" layer="16"/>
-<wire x1="60.833" y1="29.337" x2="61.214" y2="29.718" width="0.254" layer="16"/>
-<wire x1="61.214" y1="29.718" x2="61.214" y2="30.353" width="0.254" layer="16"/>
-<wire x1="61.214" y1="30.353" x2="60.833" y2="30.734" width="0.254" layer="16"/>
-<wire x1="60.833" y1="30.734" x2="59.055" y2="30.734" width="0.254" layer="16"/>
+<wire x1="60.833" y1="23.114" x2="60.833" y2="29.534" width="0.254" layer="16"/>
+<wire x1="60.833" y1="29.534" x2="59.633" y2="30.734" width="0.254" layer="16"/>
+<wire x1="59.633" y1="30.734" x2="59.055" y2="30.734" width="0.254" layer="16"/>
 <wire x1="59.055" y1="30.734" x2="58.547" y2="30.988" width="0.254" layer="16"/>
 <via x="58.547" y="30.988" extent="1-16" drill="0.4"/>
 </signal>
@@ -3616,9 +3619,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="59.055" y1="33.02" x2="59.217" y2="32.928" width="0.254" layer="1"/>
 <wire x1="63.64" y1="25.35" x2="64.897" y2="26.607" width="0.254" layer="16"/>
 <wire x1="64.262" y1="42.926" x2="64.516" y2="42.672" width="0.254" layer="1"/>
-<wire x1="64.262" y1="37.465" x2="64.262" y2="42.926" width="0.254" layer="16"/>
-<wire x1="60.96" y1="34.163" x2="64.262" y2="37.465" width="0.254" layer="16"/>
-<wire x1="60.96" y1="33.528" x2="60.96" y2="34.163" width="0.254" layer="16"/>
+<wire x1="64.262" y1="42.926" x2="64.262" y2="37.565" width="0.254" layer="16"/>
 <wire x1="34.163" y1="1.397" x2="38.862" y2="1.397" width="0.254" layer="1"/>
 <wire x1="38.862" y1="1.397" x2="39.37" y2="1.905" width="0.254" layer="1"/>
 <wire x1="39.37" y1="1.905" x2="39.37" y2="3.175" width="0.254" layer="1"/>
@@ -3639,11 +3640,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="64.516" y1="24.003" x2="63.627" y2="24.892" width="0.254" layer="1"/>
 <wire x1="63.627" y1="24.892" x2="63.627" y2="25.337" width="0.254" layer="1"/>
 <wire x1="63.627" y1="25.337" x2="63.64" y2="25.35" width="0.254" layer="1"/>
-<wire x1="64.897" y1="30.988" x2="62.357" y2="33.528" width="0.254" layer="16"/>
-<wire x1="64.897" y1="26.607" x2="64.897" y2="30.988" width="0.254" layer="16"/>
-<wire x1="59.563" y1="33.528" x2="59.055" y2="33.02" width="0.254" layer="16"/>
-<wire x1="60.96" y1="33.528" x2="59.563" y2="33.528" width="0.254" layer="16"/>
-<wire x1="62.357" y1="33.528" x2="60.96" y2="33.528" width="0.254" layer="16"/>
+<wire x1="64.897" y1="30.988" x2="64.897" y2="26.607" width="0.254" layer="16"/>
 <wire x1="64.516" y1="41.91" x2="59.436" y2="41.91" width="0.254" layer="1"/>
 <wire x1="59.436" y1="41.91" x2="59.436" y2="43.18" width="0.254" layer="1"/>
 <wire x1="59.436" y1="43.18" x2="57.257" y2="45.359" width="0.254" layer="1"/>
@@ -3677,6 +3674,11 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="40.3" y1="34" x2="41" y2="34" width="0.254" layer="1"/>
 <wire x1="41" y1="34" x2="42" y2="35" width="0.254" layer="1"/>
 <wire x1="42" y1="35" x2="42" y2="40.636" width="0.254" layer="1"/>
+<wire x1="59.055" y1="33.02" x2="62.865" y2="33.02" width="0.254" layer="16"/>
+<wire x1="62.865" y1="33.02" x2="64.897" y2="30.988" width="0.254" layer="16"/>
+<wire x1="62.9" y1="33.055" x2="62.865" y2="33.02" width="0.254" layer="16"/>
+<wire x1="64.262" y1="37.565" x2="62.9" y2="36.203" width="0.254" layer="16"/>
+<wire x1="62.9" y1="36.203" x2="62.9" y2="33.055" width="0.254" layer="16"/>
 </signal>
 <signal name="AREF">
 <contactref element="C1" pad="1"/>
@@ -3754,12 +3756,12 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="57.404" y1="21.59" x2="64.516" y2="21.59" width="0.254" layer="1"/>
 <wire x1="56.515" y1="22.479" x2="57.404" y2="21.59" width="0.254" layer="1"/>
 <wire x1="54.0766" y1="27.3304" x2="54.0766" y2="24.9174" width="0.254" layer="16"/>
-<wire x1="53.6575" y1="27.7495" x2="53.467" y2="27.94" width="0.254" layer="16"/>
-<wire x1="53.6575" y1="27.7495" x2="54.0766" y2="27.3304" width="0.254" layer="16"/>
+<wire x1="53.4575" y1="27.9495" x2="53.467" y2="27.94" width="0.254" layer="16"/>
+<wire x1="53.467" y1="27.94" x2="54.0766" y2="27.3304" width="0.254" layer="16"/>
 <wire x1="53.467" y1="27.94" x2="53.467" y2="29.591" width="0.254" layer="16"/>
 <wire x1="31.877" y1="48.006" x2="28.956" y2="50.8" width="0.254" layer="16"/>
-<wire x1="52.2766" y1="27.051" x2="52.9751" y2="27.7495" width="0.254" layer="16"/>
-<wire x1="52.9751" y1="27.7495" x2="53.6575" y2="27.7495" width="0.254" layer="16"/>
+<wire x1="52.2766" y1="27.051" x2="53.1751" y2="27.9495" width="0.254" layer="16"/>
+<wire x1="53.1751" y1="27.9495" x2="53.4575" y2="27.9495" width="0.254" layer="16"/>
 <via x="53.467" y="29.591" extent="1-16" drill="0.4"/>
 <via x="56.515" y="22.479" extent="1-16" drill="0.4"/>
 <contactref element="J1" pad="6"/>
@@ -3966,7 +3968,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <signal name="D4">
 <contactref element="J4" pad="5"/>
 <contactref element="IC3" pad="2"/>
-<contactref element="RN6" pad="5"/>
 <wire x1="53.34" y1="50.292" x2="53.34" y2="50.8" width="0.254" layer="16"/>
 <wire x1="54.356" y1="49.276" x2="53.34" y2="50.292" width="0.254" layer="16"/>
 <wire x1="56.007" y1="49.276" x2="54.356" y2="49.276" width="0.254" layer="16"/>
@@ -3980,20 +3981,20 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="58.293" y1="38.227" x2="59.817" y2="38.227" width="0.254" layer="16"/>
 <wire x1="58.293" y1="38.227" x2="58.293" y2="36.8526" width="0.254" layer="1"/>
 <wire x1="58.293" y1="36.8526" x2="58.261" y2="36.8206" width="0.254" layer="1"/>
-<wire x1="54.413" y1="26.075" x2="54.413" y2="26.6" width="0.254" layer="1"/>
-<wire x1="54.413" y1="26.6" x2="54.737" y2="26.924" width="0.254" layer="1"/>
-<wire x1="54.737" y1="26.924" x2="56.515" y2="26.924" width="0.254" layer="16"/>
-<wire x1="56.515" y1="26.924" x2="57.785" y2="28.194" width="0.254" layer="16"/>
-<wire x1="57.785" y1="28.194" x2="57.785" y2="31.5468" width="0.254" layer="16"/>
 <wire x1="57.785" y1="31.5468" x2="57.785" y2="32.9692" width="0.254" layer="1"/>
 <wire x1="57.785" y1="32.9692" x2="57.5056" y2="33.2232" width="0.254" layer="16"/>
 <wire x1="57.5056" y1="33.2232" x2="57.531" y2="34.671" width="0.254" layer="16"/>
 <wire x1="57.531" y1="34.671" x2="58.293" y2="36.449" width="0.254" layer="16"/>
 <wire x1="58.293" y1="36.449" x2="58.293" y2="38.227" width="0.254" layer="16"/>
 <via x="58.293" y="38.227" extent="1-16" drill="0.4"/>
-<via x="54.737" y="26.924" extent="1-16" drill="0.4"/>
 <via x="57.785" y="31.5468" extent="1-16" drill="0.4"/>
 <via x="57.785" y="32.9692" extent="1-16" drill="0.4"/>
+<contactref element="U$2" pad="2"/>
+<wire x1="57.3414" y1="28.5794" x2="57.3414" y2="28.3" width="0.254" layer="16"/>
+<wire x1="57.785" y1="31.5468" x2="57.785" y2="29.185" width="0.254" layer="16"/>
+<wire x1="57.062" y1="28.462" x2="57.062" y2="28.3" width="0.254" layer="16"/>
+<wire x1="57.785" y1="29.185" x2="57.062" y2="28.462" width="0.254" layer="16"/>
+<wire x1="57.062" y1="28.3" x2="57.3414" y2="28.3" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="D3">
 <contactref element="J4" pad="4"/>
@@ -5126,9 +5127,9 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="65.405" y1="39.497" x2="65.405" y2="40.64" width="0.254" layer="1"/>
 <wire x1="65.913" y1="38.989" x2="65.405" y2="39.497" width="0.254" layer="1"/>
 <wire x1="65.913" y1="38.354" x2="65.913" y2="38.989" width="0.254" layer="16"/>
-<wire x1="64.008" y1="36.449" x2="65.913" y2="38.354" width="0.254" layer="16"/>
-<wire x1="64.008" y1="32.766" x2="64.008" y2="36.449" width="0.254" layer="16"/>
-<wire x1="65.151" y1="31.623" x2="64.008" y2="32.766" width="0.254" layer="16"/>
+<wire x1="63.608" y1="36.049" x2="65.913" y2="38.354" width="0.254" layer="16"/>
+<wire x1="63.608" y1="33.166" x2="63.608" y2="36.049" width="0.254" layer="16"/>
+<wire x1="65.151" y1="31.623" x2="63.608" y2="33.166" width="0.254" layer="16"/>
 <wire x1="66.802" y1="31.623" x2="65.151" y2="31.623" width="0.254" layer="16"/>
 <wire x1="67.437" y1="30.988" x2="66.802" y2="31.623" width="0.254" layer="16"/>
 <wire x1="67.437" y1="24.511" x2="67.437" y2="30.988" width="0.254" layer="16"/>
@@ -5473,9 +5474,9 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="58.674" y1="34.544" x2="60.5376" y2="34.544" width="0.254" layer="1"/>
 <wire x1="60.96" y1="50.8" x2="60.96" y2="49.53" width="0.254" layer="16"/>
 <wire x1="60.96" y1="49.53" x2="62.865" y2="47.625" width="0.254" layer="16"/>
-<wire x1="62.865" y1="47.625" x2="62.865" y2="37.8554" width="0.254" layer="16"/>
-<wire x1="62.865" y1="37.8554" x2="59.5376" y2="34.528" width="0.254" layer="16"/>
-<wire x1="59.5376" y1="34.528" x2="58.69" y2="34.528" width="0.254" layer="16"/>
+<wire x1="62.865" y1="47.625" x2="62.865" y2="37.7554" width="0.254" layer="16"/>
+<wire x1="62.865" y1="37.7554" x2="59.6376" y2="34.528" width="0.254" layer="16"/>
+<wire x1="59.6376" y1="34.528" x2="58.69" y2="34.528" width="0.254" layer="16"/>
 <wire x1="58.69" y1="34.528" x2="58.42" y2="34.798" width="0.254" layer="16"/>
 <wire x1="59.563" y1="52.197" x2="60.96" y2="50.8" width="0.254" layer="1"/>
 <wire x1="20.701" y1="52.197" x2="59.563" y2="52.197" width="0.254" layer="1"/>
@@ -5510,10 +5511,10 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="60.4996" y1="33.782" x2="60.5536" y2="33.728" width="0.254" layer="1"/>
 <wire x1="58.293" y1="33.782" x2="60.4996" y2="33.782" width="0.254" layer="1"/>
 <wire x1="63.5" y1="50.8" x2="63.5" y2="37.5634" width="0.254" layer="16"/>
-<wire x1="63.5" y1="37.5634" x2="60.0456" y2="34.109" width="0.254" layer="16"/>
-<wire x1="58.547" y1="34.036" x2="58.293" y2="33.782" width="0.254" layer="16"/>
-<wire x1="59.8646" y1="34.036" x2="58.547" y2="34.036" width="0.254" layer="16"/>
-<wire x1="60.0456" y1="34.109" x2="59.8646" y2="34.036" width="0.254" layer="16"/>
+<wire x1="63.5" y1="37.5634" x2="59.77523125" y2="33.83863125" width="0.254" layer="16"/>
+<wire x1="58.347" y1="33.836" x2="58.293" y2="33.782" width="0.254" layer="16"/>
+<wire x1="59.768709375" y1="33.836" x2="58.347" y2="33.836" width="0.254" layer="16"/>
+<wire x1="59.77523125" y1="33.83863125" x2="59.768709375" y2="33.836" width="0.254" layer="16"/>
 <wire x1="61.595" y1="52.705" x2="63.5" y2="50.8" width="0.254" layer="1"/>
 <wire x1="18.407" y1="52.705" x2="61.595" y2="52.705" width="0.254" layer="1"/>
 <via x="3.81" y="47.879" extent="1-16" drill="0.4"/>
@@ -5602,7 +5603,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <contactref element="IC3" pad="27"/>
 <wire x1="59.477" y1="31.328" x2="60.5536" y2="31.328" width="0.254" layer="1"/>
 <wire x1="59.309" y1="31.496" x2="59.477" y2="31.328" width="0.254" layer="1"/>
-<wire x1="61.087" y1="31.496" x2="59.309" y2="31.496" width="0.254" layer="16"/>
+<wire x1="59.887" y1="31.496" x2="59.309" y2="31.496" width="0.254" layer="16"/>
 <wire x1="60.96" y1="4.191" x2="63.246" y2="6.477" width="0.254" layer="16"/>
 <wire x1="63.246" y1="6.477" x2="63.246" y2="10.287" width="0.254" layer="16"/>
 <wire x1="63.246" y1="10.287" x2="62.992" y2="10.541" width="0.254" layer="16"/>
@@ -5610,10 +5611,8 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="62.992" y1="12.954" x2="63.119" y2="13.081" width="0.254" layer="16"/>
 <wire x1="63.119" y1="13.081" x2="63.119" y2="21.59" width="0.254" layer="16"/>
 <wire x1="63.119" y1="21.59" x2="61.341" y2="23.368" width="0.254" layer="16"/>
-<wire x1="61.849" y1="30.734" x2="61.087" y2="31.496" width="0.254" layer="16"/>
-<wire x1="61.849" y1="29.591" x2="61.849" y2="30.734" width="0.254" layer="16"/>
-<wire x1="61.341" y1="29.083" x2="61.849" y2="29.591" width="0.254" layer="16"/>
-<wire x1="61.341" y1="23.368" x2="61.341" y2="29.083" width="0.254" layer="16"/>
+<wire x1="61.341" y1="30.042" x2="59.887" y2="31.496" width="0.254" layer="16"/>
+<wire x1="61.341" y1="23.368" x2="61.341" y2="30.042" width="0.254" layer="16"/>
 <via x="59.309" y="31.496" extent="1-16" drill="0.4"/>
 <via x="27.686" y="49.276" extent="1-16" drill="0.4"/>
 <via x="38.608" y="49.022" extent="1-16" drill="0.4"/>
@@ -6030,6 +6029,16 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="40.5" y1="35.0302" x2="41.2" y2="35.7302" width="0.254" layer="1"/>
 <wire x1="41.2" y1="35.7302" x2="41.2" y2="36.325" width="0.254" layer="1"/>
 </signal>
+<signal name="N$44">
+<contactref element="RN6" pad="5"/>
+<contactref element="U$2" pad="1"/>
+<via x="54.737" y="26.924" extent="1-16" drill="0.35"/>
+<wire x1="54.413" y1="26.075" x2="54.413" y2="26.6" width="0.254" layer="1"/>
+<wire x1="54.413" y1="26.6" x2="54.737" y2="26.924" width="0.254" layer="1"/>
+<wire x1="55.538" y1="28.3" x2="55.1" y2="27.862" width="0.254" layer="16"/>
+<wire x1="55.1" y1="27.287" x2="54.737" y2="26.924" width="0.254" layer="16"/>
+<wire x1="55.1" y1="27.862" x2="55.1" y2="27.287" width="0.254" layer="16"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -6039,7 +6048,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="4,16,90c8e69dbefb1df5"/>
 <approved hash="4,16,61cd8ca0987b6b0e"/>
 <approved hash="21,19,7e7cfe7cfc7efdff"/>
 <approved hash="21,19,fb2f072d07d3042f"/>
@@ -6051,7 +6059,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="5,1,35eec5bbd4ef7f14"/>
 <approved hash="5,1,587a44c50dd3e29a"/>
 <approved hash="5,1,e44868393e9ef7ef"/>
-<approved hash="5,1,5528d884550a225a"/>
 <approved hash="5,1,8476460a8f574e01"/>
 <approved hash="5,1,9fe67539763ee149"/>
 <approved hash="5,1,d9d17ffb55fcb0a1"/>
@@ -6138,7 +6145,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="5,1,368d6ff743a55cc4"/>
 <approved hash="5,1,f4640b7c92c204f8"/>
 <approved hash="5,1,ea7b799cdee7f34e"/>
-<approved hash="5,1,7f271c98cb2a63b2"/>
 <approved hash="5,1,9304958a817f0c73"/>
 <approved hash="5,1,8eac2d9821f812cd"/>
 <approved hash="5,1,9dc43af90225abe7"/>
@@ -6193,7 +6199,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="5,16,0a7a6d633d5251b2"/>
 <approved hash="5,16,65c3a08f596427fc"/>
 <approved hash="5,16,22bfede5e64dca4d"/>
-<approved hash="5,16,f90b1d1c7764c041"/>
 <approved hash="5,16,139c65dfd0976edf"/>
 <approved hash="5,16,161dcab39b263390"/>
 <approved hash="5,16,9e067c8d8b35ecf0"/>
@@ -6215,7 +6220,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="5,16,adb4769b32dc0df8"/>
 <approved hash="5,16,2143a3b79e9e5a69"/>
 <approved hash="5,16,b0a4bdaede4f2fbc"/>
-<approved hash="5,16,bb085073ae15452a"/>
 <approved hash="5,16,f29ef2b901a77c7e"/>
 <approved hash="5,16,bf579da35f25ad0f"/>
 <approved hash="5,16,856a8ba37f25ad32"/>
@@ -6279,7 +6283,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,e2426ea06c87e065"/>
 <approved hash="1,20,f245b2a7b081f063"/>
 <approved hash="1,20,224526a724802062"/>
-<approved hash="1,20,e242e120e0c1e3a3"/>
 <approved hash="1,20,6d7b0e190f416c23"/>
 <approved hash="1,20,f391bef3be9ef3fc"/>
 <approved hash="1,20,e2cde62fe7b2e350"/>
@@ -6288,7 +6291,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,e1b1a4d3a492e1f0"/>
 <approved hash="1,20,a3c426a62682a3e0"/>
 <approved hash="1,20,e24201200142e220"/>
-<approved hash="1,20,15f11813e72eeacc"/>
 <approved hash="1,20,23c5e027e2c42126"/>
 <approved hash="1,20,6000a1e2a1c16023"/>
 <approved hash="1,20,6271a713583e9d5c"/>
@@ -6298,7 +6300,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,159e157c149e147c"/>
 <approved hash="1,20,a35767b56496a074"/>
 <approved hash="1,20,e20c61ee618ee26c"/>
-<approved hash="1,20,1084f366f2861164"/>
 <approved hash="1,20,6262210020026360"/>
 <approved hash="1,20,93fd701f703993db"/>
 <approved hash="1,20,e3f6671464f6e014"/>
@@ -6345,7 +6346,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,7d82bce0bcc27da0"/>
 <approved hash="1,20,949a1778165e95bc"/>
 <approved hash="1,20,534030a24e862d64"/>
-<approved hash="1,20,7250a932abb170d3"/>
 <approved hash="1,20,725db1bfb2817163"/>
 <approved hash="1,20,73fbb019b13672d4"/>
 <approved hash="1,20,a34520a72286a164"/>
@@ -6378,7 +6378,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,624562a76c866c64"/>
 <approved hash="1,20,a24d632f630fa26d"/>
 <approved hash="1,20,6083a161be407fa2"/>
-<approved hash="1,20,22322350259024f2"/>
 <approved hash="1,20,25822160204724a5"/>
 <approved hash="1,20,5d5b18b916905372"/>
 <approved hash="1,20,150068e26e861364"/>
@@ -6410,7 +6409,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,2271211320302352"/>
 <approved hash="1,20,225862ba60822060"/>
 <approved hash="1,20,7c43b9a1ba827f60"/>
-<approved hash="1,20,62d0a3b2a29663f4"/>
 <approved hash="1,20,6241a923a9466224"/>
 <approved hash="1,20,6245a927a9466224"/>
 <approved hash="1,20,7c9ab978b9917c73"/>
@@ -6426,7 +6424,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,63176ff56f976375"/>
 <approved hash="1,20,cd7b6c196dc3cca1"/>
 <approved hash="1,20,62c501a7008363e1"/>
-<approved hash="1,20,d24411a61182d260"/>
 <approved hash="1,20,a282e160e287a165"/>
 <approved hash="1,20,d33010d21692d570"/>
 <approved hash="1,20,227b271926c223a0"/>
@@ -6439,10 +6436,8 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,1270191218321350"/>
 <approved hash="1,20,f272d310d233f351"/>
 <approved hash="1,20,e3c660a46f83ece1"/>
-<approved hash="1,20,227a631865322450"/>
 <approved hash="1,20,f42079c27983f461"/>
 <approved hash="1,20,a1021a601a81a1e3"/>
-<approved hash="1,20,71857167708e706c"/>
 <approved hash="1,20,6104a266a3416023"/>
 <approved hash="1,20,124cef2eee8213e0"/>
 <approved hash="1,20,2263e101e0022360"/>

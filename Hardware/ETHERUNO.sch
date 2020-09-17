@@ -20181,6 +20181,7 @@ Various fiducial points for machine vision alignment.</description>
 <part name="P+9" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="3.3V" device=""/>
 <part name="GND12" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="RN9" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="4R-N" device="CAY16" package3d_urn="urn:adsk.eagle:package:11872201/2" value="10K"/>
+<part name="U$2" library="SuperHouse-Jumpers" library_urn="urn:adsk.eagle:library:12190622" deviceset="SJC" device="-NORMAL" package3d_urn="urn:adsk.eagle:package:7066342/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -21908,6 +21909,10 @@ Ethernet activity when pulled LOW.</text>
 <attribute name="VALUE" x="237.49" y="129.032" size="1.778" layer="96"/>
 <attribute name="NAME" x="229.87" y="129.032" size="1.778" layer="95"/>
 </instance>
+<instance part="U$2" gate="G$1" x="66.04" y="66.04" smashed="yes">
+<attribute name="NAME" x="63.5" y="68.58" size="1.778" layer="95"/>
+<attribute name="VALUE" x="63.5" y="62.23" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22088,13 +22093,6 @@ Ethernet activity when pulled LOW.</text>
 <pinref part="IC5" gate="G$1" pin="COPI"/>
 <wire x1="213.36" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
 <label x="215.9" y="144.78" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="D4" class="0">
-<segment>
-<wire x1="58.42" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="RN6" gate="D" pin="2"/>
-<label x="73.66" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -22646,6 +22644,20 @@ Ethernet activity when pulled LOW.</text>
 <pinref part="RN9" gate="D" pin="1"/>
 <pinref part="IC5" gate="G$1" pin="RSVD1"/>
 <wire x1="215.9" y1="129.54" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="RN6" gate="D" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D4" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
+<label x="73.66" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
